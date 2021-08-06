@@ -7,6 +7,9 @@
   font-family: 'Poppins', sans-serif;
   font-size: 1rem;
 }
+body{
+  background: #f2f2f2;
+}
 section {
   background-image: linear-gradient(0deg, rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url('https://images03.nicepage.com/a1389d7bc73adea1e1c1fb7e/915988c20bba56c0b5691503/pexels-photo-3218467.jpeg');
   background-size: cover;
@@ -24,7 +27,6 @@ section {
 }
 .content {
   margin: 10px 140px;
-  z-index: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -36,10 +38,10 @@ section {
   margin-top: 30px;
 }
 .title {
-font-size: 3.75rem;
-color: #fff;
-font-family: 'Playfair Display', serif !important;
-margin: 80px 106px 0;
+  font-size: 3.75rem;
+  color: #fff;
+  font-family: 'Playfair Display', serif !important;
+  margin: 80px 106px 0;
 }
 .para {
   font-size: 1rem;
@@ -47,25 +49,61 @@ margin: 80px 106px 0;
   color: #fff;
   line-height: 30px;
 }
-.menu1 {
-  display: none;
-  position: absolute;
-  height: 100vh;
-  width: 300px;
-  top: 0;
-  left: 0;
-  background-color: black;
-  z-index: 1000;
-}
 .path{
     margin-top: 2.75rem;
 }
-.scroll{
-  position: absolute;
-  top: 200%;
-  background: #fff;
+.cont_1{
+  position: relative;
+  top: 160%;
   width: 100%;
-  height: 50%;
+ height: 100vh;
+  background: #f2f2f2;
+}
+.head{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.head p{
+  letter-spacing: 4px;
+    font-weight: 300;
+    font-family: 'Roboto',sans-serif;
+    margin: 60px auto 0;
+    font-size: 1.125rem;
+}
+.head h1{
+    font-weight: 700;
+    font-size: 3rem;
+    margin: 20px auto 0;
+    font-family: 'Playfair Display', serif !important;
+}
+.box_container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 40px 40px;
+}
+.box_container .box{
+  max-width: 400px;
+  padding: 30px 40px;
+  font-size: 1.125rem;
+  text-align: center;
+  line-height: 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.box_container .box .p1{
+  letter-spacing: 4px;
+  font-family: 'Roboto',sans-serif;
+  font-size: 1.115rem;
+}
+.box_container .box .p2{
+  margin: 10px 0 0;
+  text-align:center;
+  line-height: 1.75rem;
 }
 @media (max-width: 600px) {
   .title {
@@ -88,26 +126,26 @@ margin: 80px 106px 0;
         margin-top: 60px;
         width: 560px;
       }
-   
+
 }
 @media (min-width: 1000px) and (max-width: 1335px){
     .title{
         font-size: 4rem;
     }
     .para{
-        font-size: 1.35rem;
+        font-size: 1.25rem;
         margin-top: 30px;
         align-items: center;
         width: 620px;
     }
-   
+  
 }
 
 @media (min-width: 1336px) and (max-width:2000px){
     .para{
         font-size: 1.45rem;
         margin-top: 50px;
-    }
-     
+    }  
+    
 }
 
